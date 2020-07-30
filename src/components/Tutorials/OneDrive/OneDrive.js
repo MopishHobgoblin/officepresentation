@@ -7,7 +7,7 @@ import OneDriveFeatureList from './headlineFeatures';
 
 const titleInfo = {
     title: "OneDrive",
-    subHeading: `All of your notes, in one place. Everywhere.`,
+    subHeading: `All of your files, in one place. Everywhere.`,
     icon: onedriveIcon
 }
 
