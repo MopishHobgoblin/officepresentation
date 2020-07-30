@@ -14,6 +14,9 @@ function App() {
           {dropDown.map(item => {
             return <Route exact path={item.link} component={item.pageName} />;
           })} 
+          {dropDown.map(item => {
+            return <Route exact path={item.progressLink} component={item.progressPage} />;
+          })}  
             <Redirect to={homePage.link} />
       </Switch>
     </Router>
