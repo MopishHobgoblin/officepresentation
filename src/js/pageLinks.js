@@ -15,6 +15,7 @@ import ToDo from '../components/Tutorials/ToDo/ToDo';
 import Word from '../components/Tutorials/Word/Word';
 import WordQuiz from '../components/Tutorials/Word/WordQuiz';
 import wordIcon from '../util/images/wordIcon.png';
+import OneDrive from '../components/Tutorials/OneDrive/OneDrive';
 
 export const repoName = '';
 
@@ -157,6 +158,16 @@ export const dropDown = [
         hash: `${repoName}/#`,
         progressURL: "",
         progressLink: "/skypequiz",
+        progressPage: "",
+        icon: "",
+    },{
+        name: 'OneDrive',
+        link: '/onedrive',
+        objectClass: 'OneDrive',
+        pageName: OneDrive,
+        hash: `${repoName}/#`,
+        progressURL: "",
+        progressLink: "/onedrivequiz",
         progressPage: "",
         icon: "",
     }
