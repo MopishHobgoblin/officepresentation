@@ -22,9 +22,8 @@ export const NavBar = () => {
                         Office365 Products</a>
                         <div className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                     {/*Mapping the dropDown menu links declared in the pageLinks.js file*/}
-                        {dropDown.map(item => {
-                            return (<a className="dropdown-item" href={`${item.hash}${item.link}`}>{item.name}</a>)
-                        })}
+                        {Object.keys(dropDown).map(key => {
+return (<a className="dropdown-item" href={`${dropDown[key].hash}${dropDown[key].link}`}>{dropDown[key].name}</a>)          })} 
                         </div>
                     </li>
                         </ul>

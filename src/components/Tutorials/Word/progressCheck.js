@@ -18,7 +18,7 @@ class ProgressCheck extends React.Component {
               <Iframe 
               width="100%" 
               height={this.state.height} 
-              src={dropDown[0].progressURL} 
+              src={dropDown["word"].progressURL} 
               frameBorder="0" 
               marginWidth="0" 
               marginHeight="0" 

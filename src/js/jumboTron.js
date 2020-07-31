@@ -1,17 +1,13 @@
 import React from 'react';
-const titleInfo = {
-    title: "Error",
-    subHeading: "Operator",
-    icon: ""
-}
+import { dropDown } from '../js/pageLinks';
 
-const jumboTron = (jumboTronInfo = titleInfo) => {
+const jumboTron = (item = dropDown["excel"]) => {
     return (
     <div className="jumbotron jumbotron-fluid">
-        <img src={jumboTronInfo.icon} alt="Microsoft Word 365" style={{float: "left", maxWidth: "10em", marginLeft: "2em", marginRight: "2em", marginTop: "-1em", backgroundColor:"none"}}/>
+        <img src={item.icon} alt="Microsoft Word 365" style={{float: "left", maxWidth: "10em", marginLeft: "2em", marginRight: "2em", marginTop: "-1em", backgroundColor:"none"}}/>
             <div className="container">
-                <h1 className="display-4">{jumboTronInfo.title}</h1>
-                <p className="lead">{jumboTronInfo.subHeading}</p>
+                <h1 className="display-4">{item.name}</h1>
+                <p className="lead">{item.subHeading}</p>
             </div>
     </div>   
     )

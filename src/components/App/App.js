@@ -11,12 +11,13 @@ function App() {
           {navLinks.map(item => {
             return <Route exact path={item.link} component={item.pageName} />;
           })}
-          {dropDown.map(item => {
-            return <Route exact path={item.link} component={item.pageName} />;
+           {Object.keys(dropDown).map(key => {
+            return <Route exact path={dropDown[key].link} component={dropDown[key].pageName} />;
           })} 
-          {dropDown.map(item => {
-            return <Route exact path={item.progressLink} component={item.progressPage} />;
-          })}  
+           {Object.keys(dropDown).map(key => {
+            return <Route exact path={dropDown[key].progressLink} component={dropDown[key].progressPage}/>;
+          })}
+        }
             <Redirect to={homePage.link} />
       </Switch>
     </Router>
