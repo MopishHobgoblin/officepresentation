@@ -19,7 +19,7 @@ export const NavBar = () => {
                         })}
                     <li className="nav-item dropdown">
                         <a className="nav-link dropdown-toggle" href={`${homePage.hash}`} id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Office365 Products</a>
+                        Guides</a>
                         <div className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                     {/*Mapping the dropDown menu links declared in the pageLinks.js file*/}
                         {Object.keys(dropDown).map(key => {

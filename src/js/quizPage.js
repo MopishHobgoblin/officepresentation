@@ -1,11 +1,15 @@
-import React from 'react';
+import React, { Component } from 'react';
 import Iframe from 'react-iframe';
-import { dropDown } from '../../../js/pageLinks';
+import { dropDown } from './pageLinks';
 
-class ProgressCheck extends React.Component {
+
+class QuizPage extends Component {
     constructor(props) {
         super(props);
-        this.state = {height: props.height};
+        this.state = {
+            height: props.height,
+            product: props.product
+        };
       }
     
     componentWillMount(){
@@ -18,7 +22,7 @@ class ProgressCheck extends React.Component {
               <Iframe 
               width="100%" 
               height={this.state.height} 
-              src={dropDown["word"].progressURL} 
+              src={dropDown[`${this.state.product}`].progressURL} 
               frameBorder="0" 
               marginWidth="0" 
               marginHeight="0" 
@@ -33,4 +37,4 @@ class ProgressCheck extends React.Component {
 }
 
 
-export default ProgressCheck
+export default QuizPage 

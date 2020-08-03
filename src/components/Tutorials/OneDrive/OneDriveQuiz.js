@@ -1,15 +1,16 @@
+
 import React, { Component } from 'react';
 import { NavBar } from '../../NavBar/NavBar';
 import QuizPage from '../../../js/quizPage';
 
-class WordQuiz extends Component{
+class OneDriveQuiz extends Component{
     render() {
     return (
         <div>
             <NavBar />
-            <QuizPage product="word"/>
+            <QuizPage product="onedrive"/>
         </div>
     )
 }}
 
-export default WordQuiz;
+export default OneDriveQuiz;

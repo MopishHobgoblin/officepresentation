@@ -2,14 +2,14 @@ import React, { Component } from 'react';
 import { NavBar } from '../../NavBar/NavBar';
 import QuizPage from '../../../js/quizPage';
 
-class WordQuiz extends Component{
+class ShortcutsQuiz extends Component{
     render() {
     return (
         <div>
             <NavBar />
-            <QuizPage product="word"/>
+            <QuizPage product="shortcuts"/>
         </div>
     )
 }}
 
-export default WordQuiz;
+export default ShortcutsQuiz;

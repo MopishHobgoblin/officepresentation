@@ -1,3 +1,4 @@
+//Import Web Pages
 import Home from '../components/Home/Home';
 import About from '../components/About/About';
 import Do from '../components/Do/Do';
@@ -13,8 +14,8 @@ import Sway from '../components/Tutorials/Sway/Sway';
 import Teams from '../components/Tutorials/Teams/Teams';
 import ToDo from '../components/Tutorials/ToDo/ToDo';
 import Word from '../components/Tutorials/Word/Word';
-import WordQuiz from '../components/Tutorials/Word/WordQuiz';
 import OneDrive from '../components/Tutorials/OneDrive/OneDrive';
+import Shortcuts from '../components/Tutorials/Shortcuts/Shortcuts';
 
 //Import Icons
 import wordIcon from '../util/images/wordIcon.png';
@@ -30,6 +31,22 @@ import onedriveIcon from '../util/images/onedriveIcon.png';
 import formsIcon from '../util/images/formsIcon.png';
 import calendarIcon from '../util/images/calendarIcon.png';
 import officeIcon from '../util/images/officeIcon.png';
+import shortcutsIcon from '../util/images/shortcutsIcon.png';
+
+//Import Progress Quiz Links
+import ToDoQuiz from '../components/Tutorials/ToDo/ToDoQuiz';
+import WordQuiz from '../components/Tutorials/Word/WordQuiz';
+import ExcelQuiz from '../components/Tutorials/Excel/ExcelQuiz';
+import PowerPointQuiz from '../components/Tutorials/PowerPoint/PowerPointQuiz';
+import TeamsQuiz from '../components/Tutorials/Teams/TeamsQuiz';
+import SwayQuiz from '../components/Tutorials/Sway/SwayQuiz';
+import SkypeQuiz from '../components/Tutorials/Skype/SkypeQuiz';
+import OutlookQuiz from '../components/Tutorials/Outlook/OutlookQuiz';
+import OneNoteQuiz from '../components/Tutorials/OneNote/OneNoteQuiz';
+import OneDriveQuiz from '../components/Tutorials/OneDrive/OneDriveQuiz';
+import FormsQuiz from '../components/Tutorials/Forms/FormsQuiz';
+import CalendarQuiz from '../components/Tutorials/Calendar/CalendarQuiz';
+import ShortcutsQuiz from '../components/Tutorials/Shortcuts/ShortcutsQuiz';
 
 export const repoName = '';
 
@@ -43,19 +60,19 @@ export const homePage = {
 
 export const navLinks = [
     {
-        name: 'What Is It?',
+        name: 'Overview',
         link: '/about',
         objectClass: '',
         pageName: About,
         hash: `${repoName}/#`,
     },{
-        name: 'What Can It Do?',
+        name: 'Capabilities',
         link: '/do',
         objectClass: 'Do',
         pageName: Do,
         hash: `${repoName}/#`,
     },{
-        name: 'What are the Benefits?',
+        name: 'Benefits',
         link: '/benefits',
         objectClass: 'Benefits',
         pageName: Benefits,
@@ -64,7 +81,19 @@ export const navLinks = [
 ];
 
 export const dropDown = {
-   "word": {
+    "shortcuts": {
+        name: 'Keyboard Shortcuts',
+        link: '/shortcuts',
+        objectClass: 'Shortcuts',
+        pageName: Shortcuts,
+        hash: `${repoName}/#`,
+        progressURL: "https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAO__aFqDCJUQVVUWldPSk1aODc1STNFQTk0TTlSTUlaRC4u",
+        progressLink: "/shortcutsQuiz",
+        progressPage: ShortcutsQuiz,
+        icon: shortcutsIcon,
+        subHeading: "Quick, simple tricks to maximise your productivity.",
+    },
+    "word": {
                 name: 'Word',
                 link: '/word',
                 objectClass: 'Word',
@@ -82,9 +111,9 @@ export const dropDown = {
                 objectClass: 'Excel',
                 pageName: Excel,
                 hash: `${repoName}/#`,
-                progressURL: "",
+                progressURL: "https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAO__aFqDCJUODZZQ1RDSTRXNENBS0Q0SUgyMkhZQVNOSS4u",
                 progressLink: "/excelquiz",
-                progressPage: "",
+                progressPage: ExcelQuiz,
                 icon: excelIcon,
                 subHeading: "",
             },
@@ -94,33 +123,57 @@ export const dropDown = {
                     objectClass: 'PowerPoint',
                     pageName: PowerPoint,
                     hash: `${repoName}/#`,
-                    progressURL: "",
+                    progressURL: "https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAO__aFqDCJUMkhDQkYxUTI2NlNEU1RNMkEyTFVGT1BYWi4u",
                     progressLink: "/powerpointquiz",
-                    progressPage: "",
+                    progressPage: PowerPointQuiz,
                     icon: powerpointIcon,
                     subHeading: "",
                 },
-    "todo": {
-                name: 'ToDo',
-                link: '/todo',
-                objectClass: 'ToDo',
-                pageName: ToDo,
-                hash: `${repoName}/#`,
-                progressURL: "",
-                progressLink: "/todoquiz",
-                progressPage: "",
-                icon: todoIcon,
-                subHeading: "Keep on track, stay organised.",
-            },
-    "forms": {
+    "onedrive": {
+                    name: 'OneDrive',
+                    link: '/onedrive',
+                    objectClass: 'OneDrive',
+                    pageName: OneDrive,
+                    hash: `${repoName}/#`,
+                    progressURL: "https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAO__aFqDCJUOFNDQVVNUEcyMzlUMkNUVUVTVUc3Q1JDSC4u",
+                    progressLink: "/onedrivequiz",
+                    progressPage: OneDriveQuiz,
+                    icon: onedriveIcon,
+                    subHeading: "",
+        },
+        "teams": {
+            name: 'Teams',
+            link: '/teams',
+            objectClass: 'Teams',
+            pageName: Teams,
+            hash: `${repoName}/#`,
+            progressURL: "https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAO__aFqDCJURUg3VFZOODJKNUpLMU4zRkM1QU9NNjEyVy4u",
+            progressLink: "/teamsquiz",
+            progressPage: TeamsQuiz,
+            icon: teamsIcon,
+            subHeading: "Work remotely, work together. Work as a Team.",
+        },
+                "todo": {
+                    name: 'ToDo',
+                    link: '/todo',
+                    objectClass: 'ToDo',
+                    pageName: ToDo,
+                    hash: `${repoName}/#`,
+                    progressURL: "https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAO__aFqDCJUQjlCOUVETVdXVTBXQU5TWTlRQkVJMVRCSy4u",
+                    progressLink: "/todoquiz",
+                    progressPage: ToDoQuiz,
+                    icon: todoIcon,
+                    subHeading: "Keep on track, stay organised.",
+                },
+                "forms": {
                 name: 'Forms',
                 link: '/forms',
                 objectClass: 'forms',
                 pageName: Forms,
                 hash: `${repoName}/#`,
-                progressURL: "",
+                progressURL: "https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAO__aFqDCJURVg5Mjk1UTlZTUY5VTEyNVpEMEhRMloxQi4u",
                 progressLink: "/formsquiz",
-                progressPage: "",
+                progressPage: FormsQuiz,
                 icon: formsIcon,
                 subHeading: "",
             },
@@ -130,9 +183,9 @@ export const dropDown = {
                 objectClass: 'OneNote',
                 pageName: OneNote,
                 hash: `${repoName}/#`,
-                progressURL: "",
+                progressURL: "https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAO__aFqDCJUNkUxRlkyNVlIUE1KRElQSDBSVkdSUlI2Vi4u",
                 progressLink: "/onenotequiz",
-                progressPage: "",
+                progressPage: OneNoteQuiz,
                 icon: onenoteIcon,
                 subHeading: "",
             },
@@ -142,9 +195,9 @@ export const dropDown = {
                 objectClass: 'Outlook',
                 pageName: Outlook,
                 hash: `${repoName}/#`,
-                progressURL: "",
+                progressURL: "https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAO__aFqDCJURTM0R1YzRUNQMlgwWkFDM0FKMk5UV0dWVy4u",
                 progressLink: "/outlookquiz",
-                progressPage: "",
+                progressPage: OutlookQuiz,
                 icon: outlookIcon,
                 subHeading: "",
             },
@@ -154,23 +207,11 @@ export const dropDown = {
                 objectClass: 'Sway',
                 pageName: Sway,
                 hash: `${repoName}/#`,
-                progressURL: "",
+                progressURL: "https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAO__aFqDCJUM1ZENVk1UktDVFQ2T0hMQU9LVFZHRThVUi4u",
                 progressLink: "/swayquiz",
-                progressPage: "",
+                progressPage: SwayQuiz,
                 icon: swayIcon,
                 subHeading: "",
-            },
-    "teams": {
-                name: 'Teams',
-                link: '/teams',
-                objectClass: 'Teams',
-                pageName: Teams,
-                hash: `${repoName}/#`,
-                progressURL: "",
-                progressLink: "/teamsquiz",
-                progressPage: "",
-                icon: teamsIcon,
-                subHeading: "Work remotely, work together. Work as a Team.",
             },
     "calendar": {
                 name: 'Calendar',
@@ -178,9 +219,9 @@ export const dropDown = {
                 objectClass: 'Calendar',
                 pageName: Calendar,
                 hash: `${repoName}/#`,
-                progressURL: "",
+                progressURL: "https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAO__aFqDCJUOTg3UU9ZNDhHMDdCMVo1RldRVDIwMFRDMC4u",
                 progressLink: "/calendarquiz",
-                progressPage: "",
+                progressPage: CalendarQuiz,
                 icon: calendarIcon,
                 subHeading: "",
             },
@@ -190,24 +231,12 @@ export const dropDown = {
             objectClass: 'Skype',
             pageName: Skype,
             hash: `${repoName}/#`,
-            progressURL: "",
+            progressURL: "https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAO__aFqDCJUMktOMVhXTzhMOFdHOTc4V0tBVEw1QlpHNC4u",
             progressLink: "/skypequiz",
-            progressPage: "",
+            progressPage: SkypeQuiz,
             icon: skypeIcon,
             subHeading: "",
         },
-    "onedrive": {
-                name: 'OneDrive',
-                link: '/onedrive',
-                objectClass: 'OneDrive',
-                pageName: OneDrive,
-                hash: `${repoName}/#`,
-                progressURL: "",
-                progressLink: "/onedrivequiz",
-                progressPage: "",
-                icon: onedriveIcon,
-                subHeading: "",
-            },
 };
 /*
 export const socialLinks = [
