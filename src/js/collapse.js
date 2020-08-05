@@ -9,7 +9,7 @@ const collapse = (inputFunction) => {
                     <div classNameName="card">
                     <div className="card-header" id={`heading${key}`}>
                       <h2 className="mb-0">
-                        <button className="btn btn-link btn-block text-center lead" type="button" data-toggle="collapse" data-target={`#collapse${key}`} aria-expanded="true" aria-controls={`collapse${key}`}>
+                        <button className="btn btn-link btn-block text-center lead h4" type="button" data-toggle="collapse" data-target={`#collapse${key}`} aria-expanded="true" aria-controls={`collapse${key}`}>
                           {inputFunction[key].title}
                         </button>
                       </h2>
