@@ -1,7 +1,8 @@
 import React from 'react';
-import Iframe from 'react-iframe';
+
 import collapse from '../../js/collapse';
 import { aboutInfo } from './info';
+import videoViewer from '../../js/videoViewer';
 
 
 
@@ -18,22 +19,10 @@ const PageInfo = () => {
 
             <div className="col-12 col-sm-12 col-md-12 col-lg-8 col-xl-8 text-center">{collapse(aboutInfo)}</div>
 
-            <div className="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4">
-            <Iframe 
-              width="532px" 
-              height="300px"
-              src={`https://www.microsoft.com/en-us/videoplayer/embed/RE4t1lL?pid=ocpVideo1-innerdiv-oneplayer&postJsllMsg=true&maskLevel=20&market=en-us`}
-              frameBorder="0" 
-              marginWidth="0" 
-              marginHeight="0" 
-              styles={{border: "none", maxWidth:"100%", maxHeight:"100vh"}} 
-              AllowFullScreen 
-              webkitallowfullscreen 
-              mozallowfullscreen 
-              msallowfullscreen/>
-            </div>
+            <div className="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 d-flex justify-content-center">
+            {videoViewer(`https://www.microsoft.com/en-us/videoplayer/embed/RE4t1lL?pid=ocpVideo1-innerdiv-oneplayer&postJsllMsg=true&maskLevel=20&market=en-us`)}
         </div>
-
+</div>
         
         </div>
     )
