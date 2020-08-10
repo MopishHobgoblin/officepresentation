@@ -2,6 +2,7 @@ import React from 'react';
 import { HashRouter as Router, Route, Switch, Redirect} from 'react-router-dom'; 
 import './App.css';
 import { navLinks, homePage, dropDown } from '../../js/pageLinks';
+import BenefitsQuiz from '../Benefits/BenefitsQuiz';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
             return <Route exact path={dropDown[key].progressLink} component={dropDown[key].progressPage}/>;
           })}
         }
+            <Route exact path="/benefitsquiz" component={BenefitsQuiz} />
             <Redirect to={homePage.link} />
       </Switch>
     </Router>

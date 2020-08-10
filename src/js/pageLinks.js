@@ -21,7 +21,7 @@ import Shortcuts from '../components/Tutorials/Shortcuts/Shortcuts';
 import wordIcon from '../util/images/wordIcon.png';
 import excelIcon from '../util/images/excelIcon.png';
 import powerpointIcon from '../util/images/powerpointIcon.png';
-import todoIcon from '../util/images/todoIcon.png';
+import todoIcon from '../util/images/ToDoIcon.png';
 import teamsIcon from '../util/images/teamsIcon.png';
 import swayIcon from '../util/images/swayIcon.png';
 import skypeIcon from '../util/images/skypeIcon.png';
@@ -93,6 +93,18 @@ export const dropDown = {
         icon: shortcutsIcon,
         subHeading: "Quick, simple tricks to maximise your productivity.",
     },
+    "todo": {
+        name: 'ToDo',
+        link: '/todo',
+        objectClass: 'ToDo',
+        pageName: ToDo,
+        hash: `${repoName}/#`,
+        progressURL: "https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAO__aFqDCJUQjlCOUVETVdXVTBXQU5TWTlRQkVJMVRCSy4u",
+        progressLink: "/todoquiz",
+        progressPage: ToDoQuiz,
+        icon: todoIcon,
+        subHeading: "Keep on track, stay organised.",
+    },
     "word": {
                 name: 'Word',
                 link: '/word',
@@ -105,7 +117,7 @@ export const dropDown = {
                 icon: wordIcon,
                 subHeading: "Create documents.",
             },
-    "excel": {
+    /*"excel": {
                 name: 'Excel',
                 link: '/excel',
                 objectClass: 'Excel',
@@ -116,7 +128,7 @@ export const dropDown = {
                 progressPage: ExcelQuiz,
                 icon: excelIcon,
                 subHeading: "",
-            },
+            },*/
     "powerpoint": {
                     name: 'PowerPoint',
                     link: '/powerpoint',
@@ -153,18 +165,7 @@ export const dropDown = {
             icon: teamsIcon,
             subHeading: "Work remotely, work together. Work as a Team.",
         },
-                "todo": {
-                    name: 'ToDo',
-                    link: '/todo',
-                    objectClass: 'ToDo',
-                    pageName: ToDo,
-                    hash: `${repoName}/#`,
-                    progressURL: "https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAO__aFqDCJUQjlCOUVETVdXVTBXQU5TWTlRQkVJMVRCSy4u",
-                    progressLink: "/todoquiz",
-                    progressPage: ToDoQuiz,
-                    icon: todoIcon,
-                    subHeading: "Keep on track, stay organised.",
-                },
+                
                 "forms": {
                 name: 'Forms',
                 link: '/forms',
@@ -177,7 +178,7 @@ export const dropDown = {
                 icon: formsIcon,
                 subHeading: "",
             },
-    "onenote": {
+    /*"onenote": {
                 name: 'OneNote',
                 link: '/onenote',
                 objectClass: 'OneNote',
@@ -236,7 +237,7 @@ export const dropDown = {
             progressPage: SkypeQuiz,
             icon: skypeIcon,
             subHeading: "",
-        },
+        },*/
 };
 /*
 export const socialLinks = [

@@ -27,7 +27,7 @@ export const headlineFeatures = [
 const OneDriveFeatureList = () => {
     return (
         <div className="container-lg">
-            <h2 className="text-center">Key Features of OneDrive:</h2>
+            <h2 className="text-center h2">Key Features of OneDrive</h2>
             <br></br>
             <ul className="list-group">
                 {headlineFeatures.map(item => {

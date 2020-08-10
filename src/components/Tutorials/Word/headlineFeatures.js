@@ -1,23 +1,50 @@
 export const headlineFeatures = [
     {
         feature: "Share and Collaborate",
-        description: ["paragrph1", "Paragaph2", "The Quick Brown Fox jumps over the Lazy Dog."],
-        steps: ["Select Share", "Enter names to send an email invitation, or select Copy link to get a link that you can paste anywhere."],
-    },{
+        web: true, 
+        desktop: false,
+        description: ["With Word for the web, share your file with co-workers to start collaborating immediately. And whether you need to create, co-edit, or view your version history, work from anywhere with Word for the web, no matter where you are."],
+        link:  `https://support.microsoft.com/en-us/office/share-and-collaborate-in-word-for-the-web-363b02f5-baec-4376-bca5-9190f4e6df61?ns=wdwaenduser&version=16&ui=en-us&rs=en-us&ad=us`,
+        video: "",
+    },
+    {
         feature: "Add, Proofread and Format Text",
-        description: [],
-        steps: [],
-    },{
+        web: true, 
+        desktop: true ,
+        description: ["Learn to format text, insert pictures or insert a table into your documents."],
+        link: "https://support.microsoft.com/en-us/office/add-and-format-in-word-for-the-web-e8746c0e-2577-4755-b726-19c121054196",
+        video: "",
+    },
+    {
+        feature: "Design and Edit",
+        web: true, 
+        desktop: true,
+        description: ["Learn how to change the page orientation, use built in font styles and review your spelling and grammar."],
+        link: `https://support.microsoft.com/en-us/office/design-and-edit-in-word-for-the-web-b0b52a22-a10c-4bce-a3b8-06dbf14cde01`,
+        video: "",
+    },
+    {
         feature: "Comment Documents",
+        web: true, 
+        desktop: false,
         description: [],
-        steps: [],
-    },{
-        feature: "Keyboard Shortcuts",
-        description: [],
-        steps: [],
-    },{
+        link: ``,
+        video: "",
+    },
+    {
         feature: "Follow-ups and @Mentions",
-        description: [],
-        steps: [],
+        web: true, 
+        desktop: false,
+        description: ["When you comment on a document, presentation, or spreadsheet and use the @-sign with someone's name, the person you mention receives mail with a link to your comment.","Clicking the link brings them into the document and into the conversation."],
+        link: "",
+        video: "https://www.microsoft.com/en-us/videoplayer/embed/RE2yz6B?pid=ocpVideo0-innerdiv-oneplayer&postJsllMsg=true&maskLevel=20&market=en-us",
+    },
+    {
+        feature: "Cool tips",
+        web: true, 
+        desktop: false,
+        description: ["Translate your work", "Discoverr Ideas"],
+        link: "",
+        video: "",
     },
 ];
